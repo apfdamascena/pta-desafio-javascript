@@ -14,7 +14,7 @@ const keysAvaiable = ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"]
 const directions = ["turnUp", "turnLeft", "turnRight", "turnDown"];
 
 window.addEventListener("keydown", (event) => {
-    const { key } = event;
+    const key  = event.key;
 
     const keyPressedAvaiable =  keysAvaiable.some((currentKey) => {
         return currentKey === key;
